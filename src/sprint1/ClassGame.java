@@ -16,8 +16,8 @@ public class ClassGame extends ClassScore {
         this.Player1 = player1;
         this.Player2 = player2;
         this.PlayerScore = new Integer[2];
-        this.PlayerScore[0] = 0;
-        this.PlayerScore[1] = 0;
+        this.PlayerScore[0] = this.player1Score;
+        this.PlayerScore[1] = this.player2Score;
 
         userInterfarce.Welcome();
 
