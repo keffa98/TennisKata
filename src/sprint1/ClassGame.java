@@ -1,6 +1,8 @@
 package sprint1;
 
 
+import head.Interface;
+
 public class ClassGame extends ClassScore {
 
     public  String Player;
@@ -10,14 +12,20 @@ public class ClassGame extends ClassScore {
     private Integer[] PlayerScore; // Score
     public int Score;
 
-    public ClassGame(  String player1 , String player2) {
+    public ClassGame(Interface userInterfarce,String player1 , String player2) {
         this.Player1 = player1;
         this.Player2 = player2;
         this.PlayerScore = new Integer[2];
         this.PlayerScore[0] = 0;
         this.PlayerScore[1] = 0;
 
+        userInterfarce.Welcome();
 
+
+    }
+    public void GameStart() {
+
+        System.out.println("Score: " + this.GameScore());
     }
 
     public String GameScore(){
